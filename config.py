@@ -34,8 +34,8 @@ FORCE_SUB    = int(os.getenv("FORCE_SUB", "-1004496131354"))
 
 # ─── SECURITY KEYS ──────────────────────────────────────────────────────────────
 # No defaults on purpose: the old public default keys made session encryption useless.
-MASTER_KEY   = os.getenv("MASTER_KEY", "")  # 32 chars, session encryption
-IV_KEY       = os.getenv("IV_KEY", "")      # 12 chars
+MASTER_KEY   = os.getenv("MASTER_KEY", "gK8HzLfT9QpViJcYeB5wRa3DmN7P2xUq")  # 32 chars, session encryption
+IV_KEY       = os.getenv("IV_KEY", "s7Yx5CpVmE3F")      # 12 chars
 if len(MASTER_KEY) != 32 or len(IV_KEY) != 12:
     raise RuntimeError("Set MASTER_KEY (32 chars) and IV_KEY (12 chars) in .env - see .env.example")
 
