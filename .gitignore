@@ -1,0 +1,6 @@
+.env
+*.session
+*.session-journal
+active_users.json
+__pycache__/
+*.jpg
